@@ -10,6 +10,18 @@
 #include <fstream>
 #include "jsapi.h"
 
+static JSBool ccLog(JSContext *cx, uint32_t argc, jsval *vp)
+{
+    std::cout<<"TC去你大爷的啊"<<std::endl;
+    return 0;
+}
+static JSFunctionSpec myjs_global_functions[] = {
+    JS_FS("system", ccLog, 1, 0),
+    JS_FS_END
+};
+
+
+
 
 /* The class of the global object. */
 static JSClass global_class = { "global",
@@ -50,11 +62,14 @@ int run(JSContext *cx) {
     if (!JS_InitStandardClasses(cx, global))
         return 1;
     
+    if (!JS_DefineFunctions(cx, global, myjs_global_functions))
+        return false;
+
     /* Your application code here. This may include JSAPI calls to create your own custom JS objects and run scripts. */
-    std::string script = "var today = Date(); today.toString();";
+    std::string script = "var today = Date(); today.toString(); system(/""echo hello world/"");";
     jsval rval;
     uint lineno = 0;
-    JSBool ok = JS_EvaluateScript(cx, global, script.c_str(), script.length(), "Script.js", lineno, &rval);
+    JSBool ok = JS_EvaluateScript(cx, global, script.c_str(), script.length(), nullptr, lineno, &rval);
 
     return 0;
 }
