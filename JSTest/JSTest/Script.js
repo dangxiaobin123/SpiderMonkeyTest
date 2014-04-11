@@ -1,0 +1,1 @@
+var today = Date(); today.toString();
