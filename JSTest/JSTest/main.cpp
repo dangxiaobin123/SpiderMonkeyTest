@@ -15,8 +15,16 @@ static JSBool ccLog(JSContext *cx, uint32_t argc, jsval *vp)
     std::cout<<"TC去你大爷的啊"<<std::endl;
     return 0;
 }
+
+static JSBool TCMyFunction(JSContext *cx, uint32_t argc, jsval *vp)
+{
+    std::cout<<"TC哈哈哈哈哈"<<std::endl;
+    return 0;
+}
+
 static JSFunctionSpec myjs_global_functions[] = {
     JS_FS("system", ccLog, 1, 0),
+    JS_FS("TCMyFunction", TCMyFunction, 1, 0),
     JS_FS_END
 };
 
@@ -66,7 +74,8 @@ int run(JSContext *cx) {
         return false;
 
     /* Your application code here. This may include JSAPI calls to create your own custom JS objects and run scripts. */
-    std::string script = "var today = Date(); today.toString(); system(/""echo hello world/"");";
+//    std::string script = "var today = Date(); today.toString();  system(/""echo hello world/"");";
+    std::string script = "var today = Date(); today.toString();  TCMyFunction(/""echo hello world/"");";
     jsval rval;
     uint lineno = 0;
     JSBool ok = JS_EvaluateScript(cx, global, script.c_str(), script.length(), nullptr, lineno, &rval);

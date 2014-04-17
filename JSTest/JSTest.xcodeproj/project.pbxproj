@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96C1401518F62650009623C8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C1401418F62650009623C8 /* main.cpp */; };
-		96C1401718F62650009623C8 /* JSTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96C1401618F62650009623C8 /* JSTest.1 */; };
 		96C140B418F675A1009623C8 /* libjs_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C140B318F675A1009623C8 /* libjs_static.a */; };
 		96C140B618F676A7009623C8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C140B518F676A7009623C8 /* libz.dylib */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				96C1401718F62650009623C8 /* JSTest.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -30,7 +28,6 @@
 		96974D3718F69A5B00731CCF /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
 		96C1401118F62650009623C8 /* JSTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C1401418F62650009623C8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		96C1401618F62650009623C8 /* JSTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JSTest.1; sourceTree = "<group>"; };
 		96C1407218F675A0009623C8 /* BitArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitArray.h; sourceTree = "<group>"; };
 		96C1407418F675A0009623C8 /* Barrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barrier.h; sourceTree = "<group>"; };
 		96C1407518F675A0009623C8 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
@@ -130,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				96C1401418F62650009623C8 /* main.cpp */,
-				96C1401618F62650009623C8 /* JSTest.1 */,
 				96974D3718F69A5B00731CCF /* Script.js */,
 				96C1406E18F675A0009623C8 /* resource */,
 			);
