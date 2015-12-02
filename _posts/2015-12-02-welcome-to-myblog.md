@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-11-30 17:16:04 +0800
+title:  "Welcome to myBBlog!"
+date:   2015-12-02 13:38:04 +0800
 categories: jekyll update
 ---
 
