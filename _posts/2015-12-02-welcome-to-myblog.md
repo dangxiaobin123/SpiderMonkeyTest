@@ -22,3 +22,9 @@ categories: jekyll update
 
 class-dump 作用对象必须是未经加密的可执行文件，而从 App Store 下载的 App 都是经过签名加密的，可执行文件被加上了一层“壳”。可以使用 AppCrackr 来自动砸壳。
 
+
+## 安装方法 
+
+1. 将class-dump复制到/usr/local/bin/目录下 (cp ./bin/class-dump /usr/local/bin/rgb)
+2. 设置权限 (sudo chmod 777 /usr/local/bin/class-dump)
+3. 使用时，cd 到工程目录，再执行 上面的命令 即可
