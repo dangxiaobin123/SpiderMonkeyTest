@@ -1,39 +1,24 @@
 ---
 layout: post
-title:  "Welcome to myBBlog!"
-date:   2015-12-02 13:38:04 +0800
+title:  "class-dump"
+date:   2015-12-18 13:38:04 +0800
 categories: jekyll update
 ---
 
 
-An inline image ![Smaller icon](http://25.io/smaller/favicon.ico "Title here"), title is optional.
+[class-dump源码工程](http://stevenygard.com)
 
-![Mou icon](http://25.io/mou/Mou_128.png)
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+![Smaller icon](http://25.io/smaller/favicon.ico "Title here")
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+今天我们来谈谈class-dump.
+首先从官网下载下来最新版class-dump，然后编译。
+拿出来class-dump运行文件，然后放在/usr / local / bin下
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
+`class-dump -H /Applications/Calculator.app -o /Users/Rio/Desktop/heads`
 
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+上面的这个命令`-H`后面是可执行文件  `-o`后面是产生的.h文件存放路径
 
-#### Inline code and Block code
+class-dump 作用对象必须是未经加密的可执行文件，而从 App Store 下载的 App 都是经过签名加密的，可执行文件被加上了一层“壳”。可以使用 AppCrackr 来自动砸壳。
 
-Inline code are surround by `backtick` key. To create a block code:
-
-	Indent each line by at least 1 tab, or 4 spaces.
-    var Mou = exactlyTheAppIwant; 
-    
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
