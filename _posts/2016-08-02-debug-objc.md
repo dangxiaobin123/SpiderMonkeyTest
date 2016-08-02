@@ -5,13 +5,13 @@ date:   2016-08-02 14:45:04 +0800
 categories: jekyll update
 ---
 
-######  objc源码下载
+##  objc源码下载
 
 **[工程include文件参考链接](https://github.com/RetVal/objc-runtime)
 
 **[首先下载最新源码runtime](http://opensource.apple.com//tarballs/objc4/)
 
-######	编译报错，冷静！
+##	编译报错，冷静！
 
 *下面介绍如何处理错误
 
@@ -40,17 +40,17 @@ categories: jekyll update
 
 ***GAME OVER: SUCCESS!
 
-######	开始调试
+##	开始调试
 
 1.创建debug-objc的target，Command Line Tool的项目模版就可以
 
 2.在objc-runtime-new.mm的lookUpImpOrForward里面打断点然后运行可以看到进入objc-runtime里了
 
-#如果没进来，别急
+$如果没进来，别急
 
 *在Build Phases里面 Target Dependencies添加objc的target
 
 *在Build Phases里面 Link Binary Libraries添加libobjc.A.dylib的库
 
-[objc消息发送调试](http://www.open-open.com/lib/view/open1461650361464.html)
+[附送一个objc消息发送调试](http://www.open-open.com/lib/view/open1461650361464.html)
 
