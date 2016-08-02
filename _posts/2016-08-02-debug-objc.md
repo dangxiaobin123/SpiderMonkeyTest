@@ -7,9 +7,9 @@ categories: jekyll update
 
 ##  objc源码下载
 
-**[工程include文件参考链接](https://github.com/RetVal/objc-runtime)
+* [工程include文件参考链接](https://github.com/RetVal/objc-runtime)
 
-**[首先下载最新源码runtime](http://opensource.apple.com//tarballs/objc4/)
+* [首先下载最新源码runtime](http://opensource.apple.com//tarballs/objc4/)
 
 ##	编译报错，冷静！
 
@@ -48,9 +48,9 @@ categories: jekyll update
 
 $如果没进来，别急
 
-*在Build Phases里面 Target Dependencies添加objc的target
+* 在Build Phases里面 Target Dependencies添加objc的target
 
-*在Build Phases里面 Link Binary Libraries添加libobjc.A.dylib的库
+* 在Build Phases里面 Link Binary Libraries添加libobjc.A.dylib的库
 
 [附送一个objc消息发送调试](http://www.open-open.com/lib/view/open1461650361464.html)
 
